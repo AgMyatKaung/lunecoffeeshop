@@ -215,3 +215,11 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+document.getElementById("scroll-top").addEventListener("click", function(event) {
+  event.preventDefault(); // Prevents the default anchor jump
+  document.querySelector("#menu").scrollIntoView({
+      behavior: "smooth", // Smooth scrolling effect
+      block: "start", // Scrolls to the start of the #menu section
+  });
+});
