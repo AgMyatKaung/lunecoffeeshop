@@ -51,6 +51,18 @@
   --surface-color: #42301c;
   --contrast-color: #ffffff;
 }
+.logo-container {
+  width: 200px; /* Adjust this size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 100%;
+  height: auto;
+}
+
 
 /* Smooth scroll */
 :root {
@@ -1669,3 +1681,4 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
