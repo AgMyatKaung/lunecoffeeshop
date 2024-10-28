@@ -1,6 +1,6 @@
 /**
-* Template Name: Delicious
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+* Template Name: Restaurantly
+* Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
 * Updated: Aug 07 2024 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -103,19 +103,6 @@
   window.addEventListener('load', aosInit);
 
   /**
-   * Auto generate the carousel indicators
-   */
-  document.querySelectorAll('.carousel-indicators').forEach((carouselIndicator) => {
-    carouselIndicator.closest('.carousel').querySelectorAll('.carousel-item').forEach((carouselItem, index) => {
-      if (index === 0) {
-        carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}" class="active"></li>`;
-      } else {
-        carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}"></li>`;
-      }
-    });
-  });
-
-  /**
    * Initiate glightbox
    */
   const glightbox = GLightbox({
@@ -215,11 +202,3 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
-
-document.getElementById("scroll-top").addEventListener("click", function(event) {
-  event.preventDefault(); // Prevents the default anchor jump
-  document.querySelector("#menu").scrollIntoView({
-      behavior: "smooth", // Smooth scrolling effect
-      block: "start", // Scrolls to the start of the #menu section
-  });
-});

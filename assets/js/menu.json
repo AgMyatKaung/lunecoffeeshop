@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Lobster Bisque",
+      "price": "$5.95",
+      "category": "starters",
+      "image": "/assets/menu/Desserts/Acai Bowl.webp",
+      "description": "Lorem, deren, trataro, filede, nerada"
+    },
+    {
+      "name": "Bread Barrel",
+      "price": "$6.95",
+      "category": "specialty",
+      "image": "assets/img/menu/bread-barrel.jpg",
+      "description": "Lorem, deren, trataro, filede, nerada"
+    },
+    {
+      "name": "Crab Cake",
+      "price": "$7.95",
+      "category": "starters",
+      "image": "assets/img/menu/cake.jpg",
+      "description": "A delicate crab cake served on a toasted roll with lettuce and tartar sauce"
+    }
+  ]
+  
