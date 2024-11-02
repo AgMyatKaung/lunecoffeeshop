@@ -202,3 +202,16 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+document.getElementById("career-form").addEventListener("submit", function(event) {
+    // Prevent the default form submission
+    event.preventDefault()
+    // Show loading animation
+    document.getElementById("loading-animation").style.display = "block"
+    // Submit the form after a short delay to show the loading animation
+    setTimeout(() => {
+        this.submit(); // Submit the form
+    }, 100); // Adjust the delay as needed (in milliseconds)
+});
+
