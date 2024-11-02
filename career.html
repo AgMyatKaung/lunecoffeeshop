@@ -162,65 +162,48 @@
             </div>
 
             <div class="col-lg-8">
-                <form id="careerForm" class="php-email-form" enctype="multipart/form-data" data-aos="fade-up" data-aos-delay="200">
-                    <!-- Form Fields -->
+                <form action="https://formsubmit.co/aungmyatkaung.samk@gmail.com" method="POST" class="php-email-form" enctype="multipart/form-data" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Hidden FormSubmit configuration fields -->
                     <input type="hidden" name="_subject" value="Career Application Form Submission">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_autoresponse" value="Thank you for your application. We will review it and get back to you soon!">
+                    
+                    <!-- Update this URL to match your GitHub repository name -->
+                    <input type="hidden" name="_next" value="https://agmyatkaung.github.io/lunecoffeeshop/thankyou.html">
             
                     <div class="row gy-4">
                         <div class="col-md-6">
                             <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
                         </div>
+            
                         <div class="col-md-6">
                             <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
                         </div>
+            
                         <div class="col-md-12">
                             <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
                         </div>
+            
                         <div class="col-md-12">
                             <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                         </div>
+            
+                        <!-- File Input for CV or Cover Letter -->
                         <div class="col-md-12">
                             <input type="file" class="form-control" name="attachment" accept=".pdf, .doc, .docx" required="">
                             <small class="form-text text-muted">Attach your CV or cover letter (PDF or DOC/DOCX)</small>
                         </div>
+            
                         <div class="col-md-12 text-center">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
+            
                             <button type="submit">Send Message</button>
                         </div>
                     </div>
                 </form>
             </div>
-            
-            <script>
-                document.getElementById('careerForm').addEventListener('submit', async function(event) {
-                    event.preventDefault();
-            
-                    const form = event.target;
-                    const formData = new FormData(form);
-            
-                    try {
-                        const response = await fetch("https://formsubmit.co/aungmyatkaung.samk@gmail.com", {
-                            method: "POST",
-                            body: formData,
-                        });
-            
-                        if (response.ok) {
-                            // Redirect to the thank-you page after successful submission
-                            window.location.href = "https://agmyatkaung.github.io/lunecoffeeshop/thank-you-page.html";
-                        } else {
-                            throw new Error("Form submission failed.");
-                        }
-                    } catch (error) {
-                        console.error("Error:", error);
-                        alert("There was an issue submitting the form. Please try again.");
-                    }
-                });
-            </script>
-            
             
 
         </div>
