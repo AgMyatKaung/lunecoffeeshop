@@ -163,13 +163,12 @@
 
             <div class="col-lg-8">
                 <form action="https://formsubmit.co/aungmyatkaung.samk@gmail.com" method="POST" class="php-email-form" enctype="multipart/form-data" data-aos="fade-up" data-aos-delay="200">
-
-                    <!-- Add these hidden inputs for FormSubmit to handle redirection -->
-                    <input type="hidden" name="_next" value="https://agmyatkaung.github.io/lunecoffeeshop/thank-you-page.html">
-                    <input type="hidden" name="_subject" value="New Career Application">
-
+                    <!-- Hidden FormSubmit configuration fields -->
+                    <input type="hidden" name="_subject" value="Career Application Form Submission">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Thank you for your application. We will review it and get back to you soon!">
                     
-                    <!-- Update this URL to match your GitHub repository name -->
+                    <!-- Updated _next URL for thank-you-page -->
                     <input type="hidden" name="_next" value="https://agmyatkaung.github.io/lunecoffeeshop/thankyou.html">
             
                     <div class="row gy-4">
@@ -205,6 +204,7 @@
                     </div>
                 </form>
             </div>
+            
             
 
         </div>
