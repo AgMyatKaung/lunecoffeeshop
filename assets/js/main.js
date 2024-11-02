@@ -216,7 +216,7 @@ document.getElementById('careerForm').addEventListener('submit', async function(
 
       if (response.ok) {
           // Redirect to the thank-you page after successful submission
-          window.location.href = "https://agmyatkaung.github.io/lunecoffeeshop/thank-you-page.html";
+          window.location.href = "https://agmyatkaung.github.io/lunecoffeeshop/thankyou.html";
       } else {
           throw new Error("Form submission failed.");
       }
