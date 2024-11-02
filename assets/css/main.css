@@ -1519,74 +1519,6 @@ section,
   background-color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Book A Table Section
---------------------------------------------------------------*/
-.book-a-table .reservation-img {
-  min-height: 500px;
-  background-size: cover;
-  background-position: center;
-}
-
-.book-a-table .reservation-form-bg {
-  background: color-mix(in srgb, var(--default-color), transparent 97%);
-}
-
-.book-a-table .php-email-form {
-  padding: 30px;
-}
-
-@media (max-width: 575px) {
-  .book-a-table .php-email-form {
-    padding: 20px;
-  }
-}
-
-.book-a-table .php-email-form input[type=text],
-.book-a-table .php-email-form input[type=email],
-.book-a-table .php-email-form input[type=number],
-.book-a-table .php-email-form input[type=date],
-.book-a-table .php-email-form input[type=time],
-.book-a-table .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.book-a-table .php-email-form input[type=text]:focus,
-.book-a-table .php-email-form input[type=email]:focus,
-.book-a-table .php-email-form input[type=number]:focus,
-.book-a-table .php-email-form input[type=date]:focus,
-.book-a-table .php-email-form input[type=time]:focus,
-.book-a-table .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.book-a-table .php-email-form input[type=text]::placeholder,
-.book-a-table .php-email-form input[type=email]::placeholder,
-.book-a-table .php-email-form input[type=number]::placeholder,
-.book-a-table .php-email-form input[type=date]::placeholder,
-.book-a-table .php-email-form input[type=time]::placeholder,
-.book-a-table .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.book-a-table .php-email-form button[type=submit] {
-  color: var(--default-color);
-  border: 2px solid var(--accent-color);
-  background: transparent;
-  padding: 14px 60px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.book-a-table .php-email-form button[type=submit]:hover {
-  background: var(--accent-color);
-}
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1942,4 +1874,357 @@ section,
   .cta-btn {
       font-size: 14px; /* Smaller button text on mobile */
   }
+}
+
+/* Contact Page Hero Section */
+#contact-hero {
+  background-color: #2c2c2c; /* Dark background color */
+  padding: 80px 0;
+  color: #fff;
+  height: 40vh;
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  text-align: center; /* Center text alignment */
+  padding-bottom: 20px;
+}
+
+#contact-hero .container {
+  max-width: 90%; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+#contact-hero h2 {
+  font-size: 2.5rem; /* Default font size */
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f8f9fa;
+  word-wrap: break-word; /* Break long words if necessary */
+}
+
+#contact-hero h2 span {
+  color: #ffc107; /* Accent color for "Lune Coffee Shop" */
+}
+
+#contact-hero p {
+  font-size: 1.2rem; /* Default font size */
+  color: #e9ecef;
+  word-wrap: break-word; /* Ensure words can break */
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 576px) {
+  #contact-hero h2 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+    line-height: 1.4; /* Increase line height for better readability */
+    margin-bottom: 10px;
+  }
+  
+  #contact-hero p {
+    font-size: 1rem; /* Smaller font size for mobile */
+    line-height: 1.5; /* Increase line height for better readability */
+    margin: 0 10px; /* Add side margins for padding */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #contact-hero h2 {
+    font-size: 2.5rem; /* Adjusted font size for medium screens */
+  }
+  
+  #contact-hero p {
+    font-size: 1.1rem; /* Adjusted font size for medium screens */
+  }
+}
+
+/*--------------------------------------------------------------
+# Career Page Styles
+--------------------------------------------------------------*/
+
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: var(--default-color);
+}
+
+.contact-hero {
+  position: relative; /* Make the section relative for absolute positioning of overlay */
+  
+  background-image: url('../lune/IMG_3480.PNG'); /* Add your background image */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the background image */
+  height: 150vh; /* Set a height for the hero section */
+}
+
+.contact-hero .overlay {
+  position: absolute; /* Position the overlay absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover full width */
+  height: 100%; /* Cover full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Place the overlay above the background but below the content */
+}
+
+.contact-hero .container {
+  position: relative; /* Position container above the overlay */
+  z-index: 2; /* Ensure the text is above the overlay */
+}
+
+/* Section Styles */
+.career {
+  padding: 60px 0;
+}
+
+/* Section Title */
+.career .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.career .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.career .section-title p {
+  font-size: 18px;
+  color: var(--contrast-color);
+}
+
+/* Culture Section */
+.culture {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.culture h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.culture p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Job Openings */
+.job-openings {
+  margin-bottom: 40px;
+}
+
+.job-openings h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.job-openings ul {
+  list-style: none;
+  padding: 0;
+}
+
+.job-openings li {
+  background-color: color-mix(in srgb, var(--background-color), transparent 80%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 50%);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.job-openings li:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.job-openings h4 {
+  font-size: 22px;
+  color: var(--accent-color);
+}
+
+.job-openings p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.job-openings a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.job-openings a:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+}
+
+/* Application Process */
+.application-process {
+  margin-bottom: 40px;
+}
+
+.application-process h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--accent-color);
+}
+
+.application-process p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/*--------------------------------------------------------------
+# Join Our Team Section
+--------------------------------------------------------------*/
+
+.join-our-team {
+  padding: 40px 20px;
+  background-color: var(--background-color);
+}
+
+.join-our-team .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align title to the left */
+  margin-bottom: 20px;
+}
+
+.join-our-team .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 0;
+}
+
+.join-our-team .decorative-line {
+  width: 60px; /* Length of the line */
+  height: 4px; /* Thickness of the line */
+  background-color: #ffcc00; /* Yellow color for the line */
+  margin-top: 8px; /* Space between title and line */
+}
+
+.join-our-team p {
+  font-size: 18px;
+  color: var(--default-color);
+  margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Join Our Team Section
+--------------------------------------------------------------*/
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff; /* Changed to white for a brighter look */
+  margin: 0;
+  padding: 0;
+}
+
+.life-at-lune {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to form two rows */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto; /* Center and add space above and below */
+  border-radius: 12px; /* Slightly larger border radius for a softer look */
+  overflow: hidden; /* Prevent overflow of content */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cell {
+  flex: 1 1 calc(50% - 20px); /* Two columns with spacing */
+  margin: 10px; /* Space between cells */
+  border-radius: 12px; /* Match border radius */
+  overflow: hidden; /* Ensure child elements are clipped */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.cell:hover {
+  transform: scale(1.02); /* Scale effect on hover */
+}
+
+.image-cell {
+  position: relative; /* For absolute positioning of text if needed */
+}
+
+.cell-image {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Prevent gaps under the image */
+}
+
+.text-cell {
+  padding: 20px; /* Internal padding for text */
+  background-color: #f9f9f9; /* Light background for text cells */
+  /* Removed border */
+  display: flex; /* Use flexbox for vertical alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Align content to the left */
+}
+
+.text-cell h2,
+.text-cell h3 {
+  color: #333; /* Darker text color for contrast */
+  margin-bottom: 10px; /* Space below headings */
+}
+
+.text-cell p {
+  color: #555; /* Softer text color for paragraph */
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cell {
+      flex: 1 1 100%; /* Full width on smaller screens */
+      margin: 5px 0; /* Reduce margin */
+  }
+}
+
+/* File Input Container */
+.file-input-container {
+  position: relative; /* Positioning for absolute children */
+  margin-bottom: 20px; /* Space below the file input */
+}
+
+/* Hide the default file input */
+.file-input-container input[type="file"] {
+  display: none; /* Hide the actual input */
+}
+
+/* Custom File Input Button */
+.file-input-label {
+  display: inline-block;
+  padding: 12px 20px; /* Padding for button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+  font-size: 16px; /* Font size */
+  text-align: center; /* Center the text */
+  width: 100%; /* Full width */
+}
+
+/* Hover effect for button */
+.file-input-label:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Small text below the file input */
+.file-input-container small {
+  display: block; /* Block display for line break */
+  margin-top: 8px; /* Space above small text */
+  font-size: 14px; /* Font size for small text */
+  color: #555; /* Text color for small text */
 }
