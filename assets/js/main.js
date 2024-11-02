@@ -202,4 +202,28 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+document.getElementById('careerForm').addEventListener('submit', async function(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const formData = new FormData(form);
+
+  try {
+      const response = await fetch("https://formsubmit.co/aungmyatkaung.samk@gmail.com", {
+          method: "POST",
+          body: formData,
+      });
+
+      if (response.ok) {
+          // Redirect to the thank-you page after successful submission
+          window.location.href = "https://agmyatkaung.github.io/lunecoffeeshop/thank-you-page.html";
+      } else {
+          throw new Error("Form submission failed.");
+      }
+  } catch (error) {
+      // Display a user-friendly message instead of logging the error
+      document.querySelector('.error-message').textContent = "There was an issue submitting the form. Please try again.";
+      document.querySelector('.error-message').style.display = 'block'; // Show the error message
+  }
+});
 
